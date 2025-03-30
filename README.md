@@ -1,4 +1,4 @@
-# Projeto_Web_HTML-JavaScript-API
+# Projeto Web (HTML CSS JavaScript com API)
 
 Projeto da Disciplina de Desenvolvimento Web do 2º Semestre da Faculdade Impacta num grupo de 4 integrantes.
 Nesse trabalho o grupo deve desenvolver uma aplicação Web de Gestão de Endereço que vai se conectar com uma API de Cadastro e Login disponibilizada pelo professor.
