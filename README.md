@@ -12,8 +12,8 @@ Nesse trabalho o grupo deve desenvolver uma aplicação Web de Gestão de Endere
 </div>
 
 ## Funcionalidades
-Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.
-Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.
-Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
-Gestão de Endereços: O usuário pode cadastrar, listar, visualizar detalhes e excluir endereços.
-Logout: O usuário pode fazer logout do sistema.
+- Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.
+- Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.
+- Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
+- Gestão de Endereços: O usuário pode cadastrar, listar, visualizar detalhes e excluir endereços.
+- Logout: O usuário pode fazer logout do sistema.
