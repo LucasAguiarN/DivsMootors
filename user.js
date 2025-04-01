@@ -22,7 +22,6 @@ function validar_dados() {
     }
     else {
         enviar_cadastro(name, email, cpf_cnpj, birthday, password);
-        document.getElementById("form").reset();
     }
 }
 
@@ -54,7 +53,9 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
     console.log(resposta);                              //Exibe no Console para Fins de Depuração
 
     if (api.ok){
-        alert("Cadastro Feito Com Sucesso");
+        alert(resposta.data)
+        //alert("Cadastro Feito Com Sucesso");
+        document.getElementById("form").reset();
     }
     else{                                               //Se não tiver sucesso vai ter recebido o erro como um objeto
         if (resposta.data.errors.cpf_cnpj){
