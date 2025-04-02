@@ -64,6 +64,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
 .nav-btn:hover {
@@ -85,7 +86,6 @@ input{
 form{
     text-align: center;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7);
     width: 300px;
     margin-top: 100px;
 }

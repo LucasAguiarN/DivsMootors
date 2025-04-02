@@ -6,13 +6,15 @@
 }
 
 body {
+    background-color: #0a1f44; /* Azul escuro */
+    color: white;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: #fff;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .navbar {
@@ -64,6 +66,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
 .nav-btn:hover {
@@ -83,11 +86,33 @@ p {
     color: #d1d1d1;
 }
 
-strong {
-    color: #4e9bd1;
-}
-
 a{
     text-decoration: none;              /* Elimina Sublinhado do Link */
     color: inherit;                     /* Mantém a Cor do Link conforme a Tag que Pertence */
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    text-align: left;
+    position: relative;
+}
+
+/* Título "Sobre Nós" fixado no topo */
+.sobre-nos {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Conteúdo do texto */
+.conteudo {
+    margin-top: 80px; /* Dá espaço para o título */
+    font-size: 18px;
+    line-height: 1.6;
 }
