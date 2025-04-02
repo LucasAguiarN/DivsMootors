@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
-    <title>NOME PROJETO - Início</title>
-    <link rel="stylesheet" type="text/css" href="page_inicial.css">
+    <title>DivsMootors</title>
+    <link rel="stylesheet" type="text/css" href="landing_page_style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1 id="nome_projeto">NOME PROJETO</h1>
-    <div class="cabecalho_navegacao">
-        <h2>Início</h2>
-        <a href="index_cadastro.html"><h2>Cadastro</h2></a> 
-        <a href="index_sobre_nos.html"><h2>Sobre Nos</h2></a> 
-    </div>
-    <h1>Início</h1>
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="landing_page_index.html" class="nav-logo">
+                <img src="logo.png" alt="DivsMootors Logo" class="logo-img">
+                DivsMootors
+            </a>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn" id="sobre-btn">
+                <a href="sobre_nos_index.html"><h2>Sobre Nos</h2></a>
+            </button>
+            <button class="nav-btn" id="login-btn">
+                <a href="cadastro_index.html"><h2>Cadastro</h2></a>
+            </button>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <div class="welcome-message">
+            <h1>Bem-vindo à DivsMootors!</h1>
+            <p>A DivsMootors é uma empresa especializada em intermediação de vendas de veículos, conectando compradores e vendedores de forma prática e segura. Inspirados em modelos de sucesso como a WebMotors, oferecemos uma plataforma simples e eficiente, onde você pode anunciar, negociar e vender seu carro com total confiança.</p>
+            <p><strong>DivsMootors</strong> facilita o processo de compra e venda de veículos, proporcionando um serviço transparente e ágil, sempre com a segurança que nossos clientes merecem.</p>
+            <p><strong>Anuncie e Venda com a DivsMootors.</strong></p>
+        </div>
+    </section>
+
 </body>
 </html>

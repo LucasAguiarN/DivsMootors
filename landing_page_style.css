@@ -1,41 +1,112 @@
-body{
-    background-color: gray;           /* Define a Cor de Fundo */
-    font-family: Arial, Helvetica, sans-serif;
+/* Resetando padrões de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#nome_projeto {
-    text-align: center;                 /* Centraliza */
-    font-size: 40px;                    /* Define Tamanho */
-    background-color: white;          /* Define a Cor de Fundo */
-    padding: 20px;                      /* Adiciona Espaço */
-    border-radius: 10px;                /* Arredonda as bordas */
-    border: 5px solid black;          /* Espessura, Estilo e Cor da Borda */
-    border-radius: 20px;
-}
-
-.cabecalho_navegacao {
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;     /* Espaço entre os títulos */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0e0e1b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    border-radius: 20px;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    color: #4e9bd1;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* Tamanho da imagem do logo */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.nav-btn {
+    background-color: #0f52ba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #3a8dff;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100%;
+    padding-left: 50px; 
+    padding-top: 50px; 
+    color: #fff;
+}
+
+.welcome-message {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4e9bd1;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d1d1d1;
+}
+
+strong {
+    color: #4e9bd1;
 }
 
 a{
     text-decoration: none;              /* Elimina Sublinhado do Link */
     color: inherit;                     /* Mantém a Cor do Link conforme a Tag que Pertence */
-}
-
-h1{
-    text-align: center;
-    font-size: 30px;
-}
-
-h2 {
-    margin: 0px 0px;                     /* Margens Vertical e Horizontal */
-    padding: 0px 10px;                 /* Espaço entre Tag e Borda (Vertical e Horizontal) */
-    font-size: 25px;
-    background-color: white;
-    border: 4px solid grey;
-    border-radius: 20px;
 }
