@@ -54,7 +54,6 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
 
     if (api.ok){
         alert(resposta.data)
-        //alert("Cadastro Feito Com Sucesso");
         document.getElementById("form").reset();
     }
     else{                                               //Se não tiver sucesso vai ter recebido o erro como um objeto
