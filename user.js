@@ -4,6 +4,7 @@ function validar_dados(){
     let cpf_cnpj = document.getElementById("cpf_cnpj").value;
     let birthday = document.getElementById("birthday").value;
     let password = document.getElementById("password").value;
+    let terms = document.getElementById("terms");
 
     if (!name || !email || !cpf_cnpj || !birthday || !password){
         alert("Preencha Todos os Campos");
@@ -14,7 +15,7 @@ function validar_dados(){
     else if (!terms.checked){
         alert("Aceite os Termos de Condição");
     }
-    else {
+    else{
         enviar_cadastro(name, email, cpf_cnpj, birthday, password);
     }
 }
@@ -22,8 +23,7 @@ function validar_dados(){
 async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){    
     let userType = 1;
     let terms = 1;
-
-    dados = {
+    let dados = {
         "name": name,
         "email": email,
         "user_type_id": userType,
@@ -48,14 +48,17 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
 
     if (api.ok){
         alert("Enviamos um link de ativação de conta no email:\n"+email+" -> clique e ative sua conta");
-        form.reset();
+        document.getElementById("form").reset();;
     }
-    else{                                               
+    else if (resposta.data && resposta.data.errors){                                               
         if (resposta.data.errors.cpf_cnpj){
             alert("CPF ou CNPJ Já Cadastrado");
         }
         if (resposta.data.errors.email){                
             alert("Email Já Cadastrado!");
         }
+    }
+    else{
+        alert("Sistema Fora do Ar");
     }
 }
