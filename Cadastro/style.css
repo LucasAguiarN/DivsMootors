@@ -83,7 +83,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     margin-bottom: 30px;
-    color: #fff;
+    color: darkturquoise;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
@@ -148,9 +148,4 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-}
-
-a{
-    text-decoration: none;
-    color: white;
 }
