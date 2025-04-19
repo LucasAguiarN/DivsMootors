@@ -11,20 +11,36 @@ function validar_dados(){
 }
 
 async function autenticar_login(email, password) {   
-    let api = await fetch(                              
-        "https://go-wash-api.onrender.com/api/login",{
-            method:"POST",
-            body:JSON.stringify({
-                "email": email,
-                "password": password,
-                "user_type_id": 1
-
-            }),                
-            headers:{
-                'Content-Type':'application/json'
-            }                    
+    try{
+        let request = await fetch(                              
+            "https://go-wash-api.onrender.com/api/login",{
+                method:"POST",
+                body:JSON.stringify({
+                    "email": email,
+                    "password": password,
+                    "user_type_id": 1
+                }),                
+                headers:{
+                    'Content-Type':'application/json'
+                }                    
+            }
+        );
+        let resposta = await request.json();
+        console.log(resposta);
+        if (request.status == '401'){
+            if (resposta.data.errors == "Usuário não esta ativo"){
+                throw new Error("Conta de Usuário Não Ativa!");
+            }
+            else if (resposta.data.errors == "Usuário não autorizado"){
+                throw new Error("Senha Incorreta!");
+            }
         }
-    );
-    let resposta = await api.json();                    
-    console.log(resposta);
+        else if (request.status == '404'){
+            throw new Error("Email Não Cadastrado!");
+        }
+    }
+    catch (error){
+        alert(error.message);
+        return;
+    }
 }
