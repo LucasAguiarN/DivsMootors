@@ -27,16 +27,22 @@ async function autenticar_login(email, password) {
         );
         let resposta = await request.json();
         console.log(resposta);
-        if (request.status == '401'){
-            if (resposta.data.errors == "Usuário não esta ativo"){
-                throw new Error("Conta de Usuário Não Ativa!");
+        if (!request.ok){
+            if (request.status == '401'){
+                if (resposta.data.errors == "Usuário não esta ativo"){
+                    throw new Error("Conta de Usuário Não Ativa!");
+                }
+                else if (resposta.data.errors == "Usuário não autorizado"){
+                    throw new Error("Senha Incorreta!");
+                }
             }
-            else if (resposta.data.errors == "Usuário não autorizado"){
-                throw new Error("Senha Incorreta!");
+            else if (request.status == '404'){
+                throw new Error("Email Não Cadastrado!");
             }
-        }
-        else if (request.status == '404'){
-            throw new Error("Email Não Cadastrado!");
+            else {
+                console.log("Erro!\nStatus "+request.status+" - "+request.statusText)
+                throw new Error("Sistema Fora do Ar!");
+            }
         }
     }
     catch (error){
