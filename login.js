@@ -27,6 +27,7 @@ async function autenticar_login(email, password) {
         );
         let resposta = await request.json();
         console.log(resposta);
+        
         if (!request.ok){
             if (request.status == '401'){
                 if (resposta.data.errors == "Usuário não esta ativo"){
@@ -40,13 +41,12 @@ async function autenticar_login(email, password) {
                 throw new Error("Email Não Cadastrado!");
             }
             else {
-                console.log("Erro!\nStatus "+request.status+" - "+request.statusText)
                 throw new Error("Sistema Fora do Ar!");
             }
         }
+        //localstorage
     }
     catch (error){
         alert(error.message);
-        return;
     }
 }

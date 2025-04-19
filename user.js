@@ -33,32 +33,35 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
         "birthday": birthday
     }
 
-    let api = await fetch(                              
-        "https://go-wash-api.onrender.com/api/user",{
-            method:"POST",
-            body:JSON.stringify(dados),                
-            headers:{
-                'Content-Type':'application/json'
-            }                    
-        }
-    );
-    
-    let resposta = await api.json();                    
-    console.log(resposta);                              
+    try{
+        let request = await fetch(                              
+            "https://go-wash-api.onrender.com/api/user",{
+                method:"POST",
+                body:JSON.stringify(dados),                
+                headers:{
+                    'Content-Type':'application/json'
+                }                    
+            }
+        );
 
-    if (api.ok){
+        let resposta = await request.json();                    
+        console.log(resposta);
+        
+        if (!request.ok){
+            if (resposta.data.errors.cpf_cnpj){
+                throw new Error("CPF ou CNPJ Já Cadastrado");
+            }
+            else if (resposta.data.errors.email){
+                throw new Error("Email Já Cadastrado!");
+            }
+            else{
+                throw new Error("Sistema Fora do Ar!");
+            }
+        }
         alert("Enviamos um link de ativação de conta no email:\n"+email+" -> clique e ative sua conta");
-        document.getElementById("form").reset();;
+        window.location.href = "../Login/index.html";
     }
-    else if (resposta.data && resposta.data.errors){                                               
-        if (resposta.data.errors.cpf_cnpj){
-            alert("CPF ou CNPJ Já Cadastrado");
-        }
-        if (resposta.data.errors.email){                
-            alert("Email Já Cadastrado!");
-        }
-    }
-    else{
-        alert("Sistema Fora do Ar");
+    catch (error){
+        alert(error.message);
     }
 }
