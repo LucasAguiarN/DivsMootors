@@ -4,9 +4,9 @@ let pageId = document.body.id;
 
 if (logado){
     login_btn.innerText = "Conta";
-    login_btn.href = "../Landing_Page/index.html";
+    login_btn.href = "../Conta/index.html";
 
     if (pageId == "login" || pageId == "cadastro" ){
-        window.location.href = "../Sobre_Nos/index.html"; // gerenciador de endereco
+        window.location.href = "../Conta/index.html";
     }
 }

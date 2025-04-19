@@ -44,6 +44,7 @@ async function autenticar_login(email, password) {
                 throw new Error("Sistema Fora do Ar!");
             }
         }
+        localStorage.setItem('nome', resposta.user.name);
         localStorage.setItem('access_token', resposta.access_token);
         window.location.href = "../Landing_Page/index.html";
     }

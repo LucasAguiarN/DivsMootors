@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src='../localstorage.js' defer></script>
-    <script src='../login.js' defer></script>
+    <script src='endereco.js' defer></script>
 </head>
-<body id="login">
+<body id="conta">
 
     <nav class="navbar">
         <div class="navbar-container">
@@ -29,22 +29,29 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Seu próximo veículo a apenas um clique</h1>
+            <h1>Texto</h1>
         </div>
     </section>
 
     <form id="form">
-        <h1>Login</h1><br>
-        <label>Email</label>
-        <input type="email" name="email" id="email"><br>
+        <h1>Endereços</h1><br>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome"><br>
 
-        <label>Senha</label>
-        <input type="password" name="password" id="password"><br>
+        <label>CEP</label>
+        <input type="text" name="cep" id="cep" onchange="buscar_endereco()"><br>
 
-        <input class="btn_login" type="button" value="Login" onclick="validar_dados()"/>
-        <label>
-            Não tem uma conta?<br><a href="../Cadastro/index.html">Crie Agora</a>
-        </label>
+        <label>Endereço</label>
+        <input type="text" name="endereco" id="endereco"><br>
+
+        <label>Numero</label>
+        <input type="text" name="numero" id="numero"><br>
+
+        <label>Complemento</label>
+        <input type="text" name="complemento" id="complemento"><br>
+
+        <input class="btn_salvar" type="button" value="Confirmar" onclick="salvar_endereco()"/>
+
     </form>
 
     <footer>
