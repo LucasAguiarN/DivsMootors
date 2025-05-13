@@ -10,3 +10,8 @@ if (logado){
         window.location.href = "../Conta/index.html";
     }
 }
+
+function deslogar(){
+    localStorage.clear();
+    window.location.href = "../Landing_Page/index.html";
+}
