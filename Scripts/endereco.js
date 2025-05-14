@@ -2,6 +2,19 @@ let token = localStorage.getItem('access_token');
 let nome = document.querySelector(".hero-content h1");
 nome.innerText = "Olá "+localStorage.getItem('nome');
 
+function exibir_form(botao){
+    document.getElementById("form").style.display = 'block';
+    if (botao.id == "cadastrar"){
+    document.getElementById("salvar").addEventListener("click", enviar_endereco);
+    }
+    else if (botao.id == "atualizar"){
+        document.getElementById("salvar").addEventListener("click", atualizar_endereco);
+    }
+    else{
+        document.getElementById("salvar").addEventListener("click", excluir_endereco);
+    }
+}
+
 async function buscar_endereco() {
     let cep = document.getElementById("cep").value;
     try{
@@ -78,5 +91,47 @@ async function enviar_endereco() {
     catch (error){
         alert(error.message);
     }
+}
 
+async function atualizar_endereco() {
+    let nome = document.getElementById("nome").value;
+    let cep = document.getElementById("cep").value;
+    let endereco = document.getElementById("endereco").value;
+    let numero = document.getElementById("numero").value;
+    let complemento = document.getElementById("complemento").value;
+
+    let dados = {
+        "title": nome,
+        "cep": cep,
+        "address": endereco,
+        "number": numero,
+        "complement": complemento,
+    }
+
+    try{
+        let request = await fetch(                              
+            "https://go-wash-api.onrender.com/api/auth/address",{
+                method:"PUT",
+                body:JSON.stringify(dados),                
+                headers:{
+                    'Content-Type':'application/json',
+                    "Authorization": `Bearer ${token}`
+                }                    
+            }
+        );
+
+        let resposta = await request.json();
+        console.log(resposta);
+
+        if (!request.ok){
+            throw new Error("Erro!\nStatus "+response.status);
+        }
+    }
+    catch (error){
+        alert(error.message);
+    }
+}
+
+async function excluir_endereco() {
+    
 }

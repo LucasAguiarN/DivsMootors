@@ -34,8 +34,8 @@
     </section>
 
     <div class="botoes">
-        <button class="btn" onclick="listar()">Listar Endereços</button>
-        <button class="btn" onclick="enviar_endereco()">Cadastrar Endereços</button>
+        <button class="btn" id="listar" onclick="listar()">Listar Endereços</button>
+        <button class="btn" id="cadastrar" onclick="exibir_form(this)">Cadastrar Endereços</button>
         <button class="btn" onclick="deslogar()">Deslogar</button>
     </div>
 
@@ -56,7 +56,7 @@
         <label>Complemento</label>
         <input type="text" name="complemento" id="complemento"><br>
 
-        <input class="btn_salvar" type="button" value="Confirmar" onclick="salvar_endereco()"/>
+        <input class="btn_salvar" id="salvar" type="button" value="Salvar"/>
 
     </form>
 
