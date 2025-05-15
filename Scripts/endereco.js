@@ -4,14 +4,34 @@ nome.innerText = "Olá "+localStorage.getItem('nome');
 
 function exibir_form(botao){
     document.getElementById("form").style.display = 'block';
-    if (botao.id == "cadastrar"){
-    document.getElementById("salvar").addEventListener("click", enviar_endereco);
+    document.getElementById("salvar").addEventListener("click", function () {
+        validar_dados(botao);
+    });
+}
+
+function validar_dados(botao){
+    let nome = document.getElementById("nome").value;
+    let cep = document.getElementById("cep").value;
+    let endereco = document.getElementById("endereco").value;
+    let numero = document.getElementById("numero").value;
+    let complemento = document.getElementById("complemento").value;
+
+    if (!nome || !cep || !endereco || !numero){
+        alert("Preencha Todos os Campos!");
+        return
     }
-    else if (botao.id == "atualizar"){
-        document.getElementById("salvar").addEventListener("click", atualizar_endereco);
+    let dados = {
+        "title": nome,
+        "cep": cep,
+        "address": endereco,
+        "number": numero,
+        "complement": complemento,
+    }
+    if (botao.id == "cadastrar"){
+        enviar_endereco(dados);
     }
     else{
-        document.getElementById("salvar").addEventListener("click", excluir_endereco);
+        atualizar_endereco(dados);
     }
 }
 
@@ -54,21 +74,7 @@ async function listar(){
     }
 }
 
-async function enviar_endereco() {
-    let nome = document.getElementById("nome").value;
-    let cep = document.getElementById("cep").value;
-    let endereco = document.getElementById("endereco").value;
-    let numero = document.getElementById("numero").value;
-    let complemento = document.getElementById("complemento").value;
-
-    let dados = {
-        "title": nome,
-        "cep": cep,
-        "address": endereco,
-        "number": numero,
-        "complement": complemento,
-    }
-
+async function enviar_endereco(dados) {
     try{
         let request = await fetch(                              
             "https://go-wash-api.onrender.com/api/auth/address",{
@@ -93,21 +99,7 @@ async function enviar_endereco() {
     }
 }
 
-async function atualizar_endereco() {
-    let nome = document.getElementById("nome").value;
-    let cep = document.getElementById("cep").value;
-    let endereco = document.getElementById("endereco").value;
-    let numero = document.getElementById("numero").value;
-    let complemento = document.getElementById("complemento").value;
-
-    let dados = {
-        "title": nome,
-        "cep": cep,
-        "address": endereco,
-        "number": numero,
-        "complement": complemento,
-    }
-
+async function atualizar_endereco(dados) {
     try{
         let request = await fetch(                              
             "https://go-wash-api.onrender.com/api/auth/address",{
