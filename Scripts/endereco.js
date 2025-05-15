@@ -130,5 +130,24 @@ async function atualizar_endereco(dados) {
 }
 
 async function excluir_endereco() {
-    
+    // Rascunho    
+    try{
+        let request = await fetch(
+            "https://go-wash-api.onrender.com/api/auth/address{ID}",{
+            method:"DELETE",          
+            headers:{
+                "Authorization": `Bearer ${token}`
+                }                    
+            }
+        );
+        let resposta = await request.json();
+        console.log(resposta);
+
+        if (!request.ok){
+            throw new Error("Erro!\nStatus "+response.status);
+        }
+    }
+    catch(error){
+        console.log(error);
+    }
 }
