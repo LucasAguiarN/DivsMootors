@@ -89,6 +89,8 @@ async function enviar_endereco(dados) {
 
         let resposta = await request.json();
         console.log(resposta);
+        document.getElementById("form").style.display = 'none';
+        alert("Endereço Cadastrado com Sucesso!");
 
         if (!request.ok){
             throw new Error("Erro!\nStatus "+response.status);
@@ -100,10 +102,11 @@ async function enviar_endereco(dados) {
 }
 
 async function atualizar_endereco(dados) {
+    // Rascunho
     try{
         let request = await fetch(                              
-            "https://go-wash-api.onrender.com/api/auth/address",{
-                method:"PUT",
+            "https://go-wash-api.onrender.com/api/auth/address{ID}",{ // id do endereço (listagem [i].id)
+                method:"POST",
                 body:JSON.stringify(dados),                
                 headers:{
                     'Content-Type':'application/json',
@@ -114,6 +117,8 @@ async function atualizar_endereco(dados) {
 
         let resposta = await request.json();
         console.log(resposta);
+        document.getElementById("form").style.display = 'none';
+        alert("Endereço Atualizado com Sucesso!");
 
         if (!request.ok){
             throw new Error("Erro!\nStatus "+response.status);
