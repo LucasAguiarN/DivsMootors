@@ -10,6 +10,11 @@ if (logado){
         window.location.href = "../Conta/index.html";
     }
 }
+else{
+    if (pageId == "conta"){
+        window.location.href = "../Login/index.html";
+    }
+}
 
 function deslogar(){
     localStorage.clear();
