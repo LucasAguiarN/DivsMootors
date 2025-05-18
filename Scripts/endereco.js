@@ -3,10 +3,25 @@ let nome = document.querySelector(".hero-content h1");
 nome.innerText = "Olá "+localStorage.getItem('nome');
 
 function exibir_form(botao){
-    document.getElementById("form").style.display = 'block';
-    document.getElementById("salvar").addEventListener("click", function () {
-        validar_dados(botao);
-    });
+    let title = document.querySelector("#form h1");
+    if (botao.id == "cadastrar"){
+        
+        title.innerText = "Cadastrar";
+    }
+    else if (botao.id == "atualizar"){
+        title.innerText = "Atualizar";
+    }
+    
+    if (botao.id != "cancelar"){
+        document.getElementById("form").style.display = 'block';
+        document.getElementById("salvar").addEventListener("click", function () {
+            validar_dados(botao);
+        });
+    }
+    else{
+        form.reset();
+        document.getElementById("form").style.display = 'none';
+    }
 }
 
 function validar_dados(botao){
