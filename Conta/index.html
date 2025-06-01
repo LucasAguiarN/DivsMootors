@@ -37,11 +37,28 @@
     <div class="botoes">
         <button class="btn" onclick="listar()">Listar Endereços</button>
         <button class="btn" id="cadastrar" onclick="exibir_form(this)">Cadastrar Endereços</button>
-        <button class="btn" id="atualizar" onclick="exibir_form(this)">Atualizar Endereços</button>
+    </div>
+
+    <div id="lista" class="enderecos-container">
+        <h2>Lista de Endereços</h2>
+        <table id="tabela_enderecos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Número</th>
+                    <th>Complemento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista_enderecos">
+            </tbody>
+        </table>
     </div>
 
     <form id="form">
-        <h1>Endereços</h1><br>
+        <h1 class="endereco">Endereços</h1><br>
         <label>Nome</label>
         <input type="text" name="nome" id="nome"><br>
 
@@ -57,8 +74,8 @@
         <label>Complemento (Opcional)</label>
         <input type="text" name="complemento" id="complemento"><br>
 
-        <input class="btn_form" id="salvar" type="button" value="Salvar"/>
-        <input class="btn_form" id="cancelar" type="button" value="Cancelar" onclick="exibir_form(this)"/>
+        <input class="btn_form" id="salvar" type="button" value="Salvar" onclick="validar_dados()"/>
+        <input class="btn_form" id="cancelar" type="button" value="Cancelar" onclick="cancela()"/>
 
     </form>
 
