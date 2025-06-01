@@ -66,7 +66,6 @@ async function buscar_endereco() {
 }
 
 async function listar(){
-    document.getElementById("lista").style.display = 'block';
     document.getElementById("form").style.display = 'none';
     try{
         let request = await fetch(
@@ -93,11 +92,16 @@ async function listar(){
             <td>${endereco.address}</td>
             <td>${endereco.number}</td>
             <td>${endereco.complement || ""}</td>
-            <td><button onclick="preencher(${endereco.id})">Atualizar</button></td>
-            <td><button onclick="excluir_endereco(${endereco.id})">Remover</button></td>
+            <td><button onclick="preencher(${endereco.id})">Atualizar</button><button onclick="excluir_endereco(${endereco.id})">Remover</button></td>
         </tr>`;
         tabelaEnderecos.innerHTML += row;
-    });
+        });
+        if (lista_enderecos.length > 0){
+            document.getElementById("lista").style.display = 'block';
+        }
+        else{
+            alert("Nenhum Endereço Cadastrado!")
+        }
     }
     catch(error){
         console.log(error);
