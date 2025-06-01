@@ -52,13 +52,17 @@ async function buscar_endereco() {
     let cep = document.getElementById("cep").value;
     try{
         let request = await fetch ("https://viacep.com.br/ws/"+cep+"/json/");
-        let resposta = await request.json();
-
         if (!request.ok){
             throw new Error("Erro!\nStatus "+response.status);
         }
-
-        document.getElementById("endereco").value = resposta.logradouro;
+        let resposta = await request.json();
+        if (resposta.logradouro == undefined){
+            alert("CEP Inválido!");
+            document.getElementById("cep").value = "";
+        }
+        else{
+            document.getElementById("endereco").value = resposta.logradouro;
+        }
     }
     catch(error){
         console.log(error);
