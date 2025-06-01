@@ -26,9 +26,9 @@ async function autenticar_login(email, password) {
             }
         );
         let resposta = await request.json();
-        console.log(resposta);
         
         if (!request.ok){
+            console.log(resposta);
             if (request.status == '401'){
                 if (resposta.data.errors == "Usuário não esta ativo"){
                     throw new Error("Conta de Usuário Não Ativa!");

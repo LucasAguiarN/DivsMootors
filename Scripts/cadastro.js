@@ -45,9 +45,9 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
         );
 
         let resposta = await request.json();                    
-        console.log(resposta);
         
         if (!request.ok){
+            console.log(resposta);
             if (resposta.data.errors.cpf_cnpj){
                 throw new Error("CPF ou CNPJ Já Cadastrado");
             }

@@ -3,7 +3,7 @@ let nome = document.querySelector(".hero-content h1");
 nome.innerText = "Olá "+localStorage.getItem('nome');
 let lista_enderecos = []
 
-async function exibir_form(botao){
+function exibir_form(botao){
     let title = document.querySelector("#form h1");
     document.getElementById("lista").style.display = 'none';
     if (botao){
@@ -81,9 +81,9 @@ async function listar(){
             }
         );
         let resposta = await request.json();
-        console.log(resposta);
 
         if (!request.ok){
+            console.log(resposta);
             throw new Error("Erro!\nStatus "+response.status);
         }
         lista_enderecos = resposta.data;
@@ -147,11 +147,11 @@ async function enviar_endereco(dados) {
         );
 
         let resposta = await request.json();
-        console.log(resposta);
         alert("Endereço Cadastrado com Sucesso!");
         cancela()
 
         if (!request.ok){
+            console.log(resposta);
             throw new Error("Erro!\nStatus "+response.status);
         }
     }
@@ -175,11 +175,11 @@ async function atualizar_endereco(dados) {
         );
 
         let resposta = await request.json();
-        console.log(resposta);
         document.getElementById("form").style.display = 'none';
         alert("Endereço Atualizado com Sucesso!");
 
         if (!request.ok){
+            console.log(resposta);
             throw new Error("Erro!\nStatus "+response.status);
         }
     }
@@ -199,9 +199,9 @@ async function excluir_endereco(id) {
             }
         );
         let resposta = await request.json();
-        console.log(resposta);
 
         if (!request.ok){
+            console.log(resposta);
             throw new Error("Erro!\nStatus "+response.status);
         }
         alert("Endereço Excluído com Sucesso!");
