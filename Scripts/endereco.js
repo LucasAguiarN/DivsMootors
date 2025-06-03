@@ -96,7 +96,12 @@ async function listar(){
             <td>${endereco.address}</td>
             <td>${endereco.number}</td>
             <td>${endereco.complement || ""}</td>
-            <td><button onclick="preencher(${endereco.id})">Atualizar</button><button onclick="excluir_endereco(${endereco.id})">Remover</button></td>
+            <td>
+                <div class="acoes">
+                    <button class="btn_table" onclick="preencher(${endereco.id})">Atualizar</button>
+                    <button class="btn_table" onclick="excluir_endereco(${endereco.id})">Remover</button>
+                </div>
+            </td>
         </tr>`;
         tabelaEnderecos.innerHTML += row;
         });
