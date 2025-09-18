@@ -17,3 +17,39 @@ Nesse trabalho o grupo deve desenvolver uma aplicação Web de Gestão de Endere
 - Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
 - Gestão de Endereços: O usuário pode cadastrar, listar, visualizar detalhes e excluir endereços.
 - Logout: O usuário pode fazer logout do sistema.
+
+<h2 id="grupo" align="center">Integrantes do Grupo</h2>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ivykkj.png" width="100" alt="Foto"/><br>
+      <b>Cauan de Melo Silva</b><br><br>
+        <a href="" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+        <a href="https://github.com/ivykkj" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ErickXr.png" width="100" alt="Foto"/><br>
+      <b>Erick Xavier Ribeiro</b><br><br>
+        <a href="https://www.linkedin.com/in/erick-xavier-0a0b572a9/" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+        <a href="https://github.com/ErickXr" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Isaacnasc.png" width="100" alt="Foto"/><br>
+      <b>Isaac do Nascimento Silva</b><br><br>
+        <a href="https://www.linkedin.com/in/isaac-nascimento-1925232a3/" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+      <a href="https://github.com/Isaacnasc" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Jloren051.png" width="100" alt="Foto"/><br>
+      <b>Julia Lourenço Nogueira</b><br><br>
+        <a href="https://www.linkedin.com/in/julia-louren%C3%A7o-8065082ba/" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+      <a href="https://github.com/Jloren051" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Lucas-Aguiar-Nunes.png" width="100"  alt="Foto"/><br>
+      <b>Lucas Aguiar Nunes</b><br><br>
+      <a href="https://www.linkedin.com/in/lucas-aguiar-nunes" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+      <a href="https://github.com/Lucas-Aguiar-Nunes" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
+    </td>
+  </tr>
+</table>
