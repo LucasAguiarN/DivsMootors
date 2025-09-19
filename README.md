@@ -67,4 +67,4 @@ Projeto acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo profe
 Instrução de Uso - Utilização do Software ou Site (Por GIFs) e Endpoints da API
 
 <h2 id="licença">📜 Licença</h2>
-Este projeto é para fins educacionais e está disponível sob a [Licença MIT](LICENSE).
+Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
