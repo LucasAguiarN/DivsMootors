@@ -21,7 +21,7 @@
     <a href="#sobre">Sobre</a> • 
     <a href="#grupo">Integrantes do Grupo</a> •
     <a href="#how-it-works">Interface e Funcionamento</a> • 
-    <a href="#lincença">Licença</a>
+    <a href="#licença">Licença</a>
 </p>
 
 <h2 id="sobre">Sobre</h2>
@@ -66,5 +66,5 @@ Projeto acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo profe
 <h2 id="how-it-works">Interface e Funcionamento</h2>
 Instrução de Uso - Utilização do Software ou Site (Por GIFs) e Endpoints da API
 
-<h2 id="lincença">📜 Licença</h2>
-Este projeto é para fins educacionais e está disponível sob a [Licença MIT](LICENSE).  
+<h2 id="licença">📜 Licença</h2>
+Este projeto é para fins educacionais e está disponível sob a [Licença MIT](LICENSE).
