@@ -1,22 +1,31 @@
-# Projeto Web (HTML CSS JavaScript com API)
+<h1 align="center"><img src="logo.png" alt="Logo" width="200px"></h1>
 
-Projeto da Disciplina de Desenvolvimento Web do 2º Semestre da Faculdade Impacta num grupo de 4 integrantes.
-Nesse trabalho o grupo deve desenvolver uma aplicação Web de Gestão de Endereço que vai se conectar com uma API de Cadastro e Login disponibilizada pelo professor.
+<p>
+    <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status = Concluído">
+    <img src="https://img.shields.io/badge/Documentação-Em_Andamento-yellow" alt="Documentação: Em Andamento">
+    <img src="https://img.shields.io/badge/Website-Down-red" alt="Website Down">
+    <img src="https://img.shields.io/badge/License-MIT-blue" alt="License = MIT">
+</p>
 
-## Tecnologias Utilizadas:
-<div style="display: inline-block">
-  <img alt="JavaScript" title="JavaScript" width = "40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>&nbsp;
-  <img alt="HTML" title="HTML" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>&nbsp;
-  <img alt="CSS" title="CSS" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>&nbsp;
-  <img alt="Git" title="Git" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>&nbsp;
-</div>
+<br>
 
-## Funcionalidades
-- Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.
-- Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.
-- Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
-- Gestão de Endereços: O usuário pode cadastrar, listar, visualizar detalhes e excluir endereços.
-- Logout: O usuário pode fazer logout do sistema.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+<br>
+
+<h1 align="center"; style="font-weight: bold;">DivsMootors</h1>
+
+<p align="center">
+    <a href="#sobre">Sobre</a> • 
+    <a href="#grupo">Integrantes do Grupo</a> •
+    <a href="#how-it-works">Interface e Funcionamento</a> • 
+    <a href="#lincença">Licença</a>
+</p>
+
+<h2 id="sobre">Sobre</h2>
+Projeto acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. O sistema consiste em uma aplicação web com gerenciador de endereços, inspirado nas necessidades de uma loja de manutenção de impressoras, com o objetivo principal de praticar e consolidar conhecimentos em consumo de APIs.
 
 <h2 id="grupo" align="center">Integrantes do Grupo</h2>
 <table align="center">
@@ -53,3 +62,9 @@ Nesse trabalho o grupo deve desenvolver uma aplicação Web de Gestão de Endere
     </td>
   </tr>
 </table>
+
+<h2 id="how-it-works">Interface e Funcionamento</h2>
+Instrução de Uso - Utilização do Software ou Site (Por GIFs) e Endpoints da API
+
+<h2 id="lincença">📜 Licença</h2>
+Este projeto é para fins educacionais e está disponível sob a [Licença MIT](LICENSE).  
