@@ -25,7 +25,10 @@
 </p>
 
 <h2 id="sobre">Sobre</h2>
-Projeto acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. O sistema consiste em uma aplicação web com gerenciador de endereços, inspirado nas necessidades de uma loja de manutenção de impressoras, com o objetivo principal de praticar e consolidar conhecimentos em consumo de APIs.
+Projeto Acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. O projeto consiste em uma Aplicação Web que vai consumir uma API disponibilizada pelo professor para realizar um Gerenciamento de Endereço.<br>
+Após o término do Semestre Letivo o acesso a API será bloqueado então as funcionalidades que necessitam de autorização para consumir a API não estaram mais disponíveis.
+<br><br>
+Repositório da API do professor: <a href="https://github.com/carlosrmfernandes/address-management">address-management</a>
 
 <h2 id="grupo" align="center">Integrantes do Grupo</h2>
 <table align="center">
@@ -58,7 +61,10 @@ Projeto acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo profe
 </table>
 
 <h2 id="how-it-works">Interface e Funcionamento</h2>
-Instrução de Uso - Utilização do Software ou Site (Por GIFs) e Endpoints da API
+Sistema de autenticação (login/cadastro)
+Cadastro de endereços
+Visualização de endereços cadastrados
+Dashboard para gerenciamento
 
 <h2 id="licença">📜 Licença</h2>
 Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
