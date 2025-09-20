@@ -79,11 +79,11 @@ As páginas estão disponíveis via GitHub Pages. No entanto, a página Conta de
     </div>
 
 <h2 id="how-it-works">⚙️ Funcionalidades</h2>
-🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.</li>
-<br>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.</li>
-<br>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.</li>
-<br>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.</li>
-<br>🔹 Logout: O usuário pode fazer logout do sistema.</li>
+🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.
+<br>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.
+<br>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
+<br>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.
+<br>🔹 Logout: O usuário pode fazer logout do sistema.
 
 <h2 id="licença">📜 Licença</h2>
 Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
