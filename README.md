@@ -64,28 +64,26 @@ Repositório da API do professor: <a href="https://github.com/carlosrmfernandes/
 
 <h2 id="interface">🖥️ Interface</h2>
 As páginas estão disponíveis via GitHub Pages. No entanto, a página Conta depende de autorização da API para que suas funcionalidades funcionem corretamente.
-<ul style="list-style: none; padding-left: 0">
-  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Landing_Page/index.html">Landing Page</a>
-  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Sobre_Nos/index.html">Sobre Nós</a>
-  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Cadastro/index.html">Cadastro</a>
-  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Login/index.html">Login</a>
-  <li>✦ Conta<br>
+<br>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Landing_Page/index.html">Landing Page</a>
+<br>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Sobre_Nos/index.html">Sobre Nós</a>
+<br>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Cadastro/index.html">Cadastro</a>
+<br>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Login/index.html">Login</a>
+<br>✦ Conta<br>
     <div align="center">
-      Ao Realizar o Login<img src="Pagina Conta_1.png" alt="Pagina Conta 1" width="400px">
-      Clicar no Botão Cadastrar Endereços<img src="Pagina Conta_2.png" alt="Pagina Conta 1" width="400px"></p>
-      Clicar no Botão Listar Endereços<img src="Pagina Conta_3.png" alt="Pagina Conta 1" width="400px">
+      Ao Realizar o Login<br>
+        <img src="Pagina Conta_1.png" alt="Pagina Conta 1" width="800px"><br>
+      Clicar no Botão Cadastrar Endereços<br>
+        <img src="Pagina Conta_2.png" alt="Pagina Conta 1" width="800px"><br>
+      Clicar no Botão Listar Endereços<br>
+        <img src="Pagina Conta_3.png" alt="Pagina Conta 1" width="800px">
     </div>
-</ul>
-
 
 <h2 id="how-it-works">⚙️ Funcionalidades</h2>
-<ul style="list-style: none; padding-left: 0;">
-  <li>🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.</li>
-  <li>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.</li>
-  <li>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.</li>
-  <li>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.</li>
-  <li>Logout: O usuário pode fazer logout do sistema.</li>
-</ul>
+<br>🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.</li>
+<br>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.</li>
+<br>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.</li>
+<br>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.</li>
+<br>🔹 Logout: O usuário pode fazer logout do sistema.</li>
 
 <h2 id="licença">📜 Licença</h2>
 Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
