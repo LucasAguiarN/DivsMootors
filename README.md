@@ -2,7 +2,7 @@
 
 <p>
     <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status = Concluído">
-    <img src="https://img.shields.io/badge/Documentação-Em_Andamento-yellow" alt="Documentação: Em Andamento">
+    <img src="https://img.shields.io/badge/Documentação-Completa-brightgreen" alt="Documentação: Completa">
     <img src="https://img.shields.io/badge/Website-Up-brightgreen" alt="Website: Up">
     <img src="https://img.shields.io/badge/License-MIT-blue" alt="License = MIT">
 </p>
@@ -20,17 +20,19 @@
 <p align="center">
     <a href="#sobre">Sobre</a> • 
     <a href="#grupo">Integrantes do Grupo</a> •
-    <a href="#how-it-works">Interface e Funcionamento</a> • 
+    <a href="#interface">Interface</a> •
+    <a href="#how-it-works">Funcionalidades</a> • 
     <a href="#licença">Licença</a>
 </p>
 
-<h2 id="sobre">Sobre</h2>
+<h2 id="sobre">📖 Sobre</h2>
 Projeto Acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. O projeto consiste em uma Aplicação Web que vai consumir uma API disponibilizada pelo professor para realizar um Gerenciamento de Endereço.<br>
+Para servir como base para o desenvolvimento da Aplicação Web, foi definida a empresa fictícia chamada DivsMootors, que atua na intermediação de vendas de veículos com foco em carros de alto padrão.<br><br>
 Após o término do Semestre Letivo o acesso a API será bloqueado então as funcionalidades que necessitam de autorização para consumir a API não estaram mais disponíveis.
 <br><br>
 Repositório da API do professor: <a href="https://github.com/carlosrmfernandes/address-management">address-management</a>
 
-<h2 id="grupo" align="center">Integrantes do Grupo</h2>
+<h2 id="grupo">👥 Integrantes do Grupo</h2>
 <table align="center">
   <tr>
     <td align="center">
@@ -60,11 +62,30 @@ Repositório da API do professor: <a href="https://github.com/carlosrmfernandes/
   </tr>
 </table>
 
-<h2 id="how-it-works">Interface e Funcionamento</h2>
-Sistema de autenticação (login/cadastro)
-Cadastro de endereços
-Visualização de endereços cadastrados
-Dashboard para gerenciamento
+<h2 id="interface">🖥️ Interface</h2>
+As páginas estão disponíveis via GitHub Pages. No entanto, a página Conta depende de autorização da API para que suas funcionalidades funcionem corretamente.
+<ul style="list-style: none; padding-left: 0">
+  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Landing_Page/index.html">Landing Page</a>
+  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Sobre_Nos/index.html">Sobre Nós</a>
+  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Cadastro/index.html">Cadastro</a>
+  <li>✦ <a href="https://lucasaguiarn.github.io/DivsMootors/Login/index.html">Login</a>
+  <li>✦ Conta<br>
+    <div align="center">
+      Ao Realizar o Login<img src="Pagina Conta_1.png" alt="Pagina Conta 1" width="400px">
+      Clicar no Botão Cadastrar Endereços<img src="Pagina Conta_2.png" alt="Pagina Conta 1" width="400px"></p>
+      Clicar no Botão Listar Endereços<img src="Pagina Conta_3.png" alt="Pagina Conta 1" width="400px">
+    </div>
+</ul>
+
+
+<h2 id="how-it-works">⚙️ Funcionalidades</h2>
+<ul style="list-style: none; padding-left: 0;">
+  <li>🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.</li>
+  <li>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.</li>
+  <li>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.</li>
+  <li>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.</li>
+  <li>Logout: O usuário pode fazer logout do sistema.</li>
+</ul>
 
 <h2 id="licença">📜 Licença</h2>
 Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
