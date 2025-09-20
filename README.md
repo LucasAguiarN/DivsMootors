@@ -3,7 +3,7 @@
 <p>
     <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status = Concluído">
     <img src="https://img.shields.io/badge/Documentação-Em_Andamento-yellow" alt="Documentação: Em Andamento">
-    <img src="https://img.shields.io/badge/Website-Down-red" alt="Website Down">
+    <img src="https://img.shields.io/badge/Website-Up-brightgreen" alt="Website: Up">
     <img src="https://img.shields.io/badge/License-MIT-blue" alt="License = MIT">
 </p>
 
