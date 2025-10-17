@@ -38,7 +38,7 @@ Repositório da API do professor: <a href="https://github.com/carlosrmfernandes/
     <td align="center">
       <img src="https://github.com/ivykkj.png" width="100" alt="Foto"/><br>
       <b>Cauan de Melo Silva</b><br><br>
-        <a href="" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
+        <a href="https://www.linkedin.com/in/cauan-de-melo-silva" target="_blank"><img title="Conecte-se" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Perfil Linkedin"/></a>
         <a href="https://github.com/ivykkj" target="_blank"><img title="Siga-Me" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Perfil GitHub"/></a>
     </td>
     <td align="center">
