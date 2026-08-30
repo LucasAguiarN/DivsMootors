@@ -26,7 +26,8 @@
 </p>
 
 <h2 id="sobre">📖 Sobre</h2>
-Projeto Acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. O projeto consiste em uma Aplicação Web que vai consumir uma API disponibilizada pelo professor para realizar um Gerenciamento de Endereço.<br>
+Projeto Acadêmico para Disciplina de Desenvolvimento Web, ministrada pelo professor Carlos Rafael Magalhães Fernandes na Faculdade Impacta, durante o segundo semestre do curso Análise e Desenvolvimento de Sistemas cursado no 1º Semestre de 2025. 
+<br><br>O projeto consiste em uma Aplicação Web que vai consumir uma API disponibilizada pelo professor para realizar um Gerenciamento de Endereço.<br>
 Para servir como base para o desenvolvimento da Aplicação Web, foi definida a empresa fictícia chamada DivsMootors, que atua na intermediação de vendas de veículos com foco em carros de alto padrão.<br><br>
 Após o término do Semestre Letivo o acesso a API será bloqueado então as funcionalidades que necessitam de autorização para consumir a API não estaram mais disponíveis.
 <br><br>
@@ -73,16 +74,16 @@ As páginas estão disponíveis via GitHub Pages. No entanto, a página Conta de
       Ao Realizar o Login<br>
         <img src="Pagina Conta_1.png" alt="Pagina Conta 1" width="800px"><br>
       Clicar no Botão Cadastrar Endereços<br>
-        <img src="Pagina Conta_2.png" alt="Pagina Conta 1" width="800px"><br>
+        <img src="Pagina Conta_2.png" alt="Pagina Conta 2" width="800px"><br>
       Clicar no Botão Listar Endereços<br>
-        <img src="Pagina Conta_3.png" alt="Pagina Conta 1" width="800px">
+        <img src="Pagina Conta_3.png" alt="Pagina Conta 3" width="800px">
     </div>
 
 <h2 id="how-it-works">⚙️ Funcionalidades</h2>
 🔹 Cadastro de Usuário: O usuário deve se registrar no sistema, fornecendo informações como nome, e-mail, CPF e outros dados necessários.
 <br>🔹 Ativação de Conta: Após o cadastro, o sistema envia um e-mail de ativação. O usuário precisa clicar no link enviado para ativar a conta.
 <br>🔹 Login: Após ativação da conta, o usuário pode fazer login no sistema com e-mail e senha, recebendo um token JWT para autenticação.
-<br>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar, visualizar detalhes e excluir endereços.
+<br>🔹 Gestão de Endereços: O usuário pode cadastrar, listar, atualizar e excluir endereços.
 <br>🔹 Logout: O usuário pode fazer logout do sistema.
 
 <h2 id="licença">📜 Licença</h2>
