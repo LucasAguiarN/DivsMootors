@@ -57,10 +57,10 @@ async function enviar_cadastro(name, email, cpf_cnpj, birthday, password){
         if (!request.ok){
             // Imprime resposta no console para fins de debug
             console.log(resposta);
-            if (resposta.data.errors.cpf_cnpj){
+            if (resposta.data && resposta.data.errors && resposta.data.errors.cpf_cnpj){
                 throw new Error("CPF ou CNPJ Já Cadastrado");
             }
-            else if (resposta.data.errors.email){
+            else if (resposta.data && resposta.data.errors && resposta.data.errors.email){
                 throw new Error("Email Já Cadastrado!");
             }
         }

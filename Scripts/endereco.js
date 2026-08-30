@@ -67,7 +67,7 @@ async function buscar_endereco() {
     try{
         let request = await fetch ("https://viacep.com.br/ws/"+cep+"/json/");
         if (!request.ok){
-            throw new Error("Erro!\nStatus "+response.status);
+            throw new Error("Erro!\nStatus "+request.status);
         }
         let resposta = await request.json();
         if (resposta.logradouro == undefined){
@@ -104,7 +104,7 @@ async function listar(){
         if (!request.ok){
             // Imprime resposta no console para fins de debug
             console.log(resposta);
-            throw new Error("Erro!\nStatus "+response.status);
+            throw new Error("Erro!\nStatus "+request.status);
         }
 
         // Lista de Endereços recebe data que retornou da API
@@ -199,19 +199,20 @@ async function enviar_endereco(dados) {
         );
 
         let resposta = await request.json();        // Converte Resposta da API para Objeto
-        alert("Endereço Cadastrado com Sucesso!");
-        cancela()       // Chama Função para Limpar e Esconder Formulário de Endereço
 
         // Se resposta da API não for OK
         if (!request.ok){
             // Imprime resposta no console para fins de debug
             console.log(resposta);
-            throw new Error("Erro!\nStatus "+response.status);
+            throw new Error("Erro!\nStatus "+request.status);
         }
+
+        alert("Endereço Cadastrado com Sucesso!");
+        cancela()       // Chama Função para Limpar e Esconder Formulário de Endereço
     }
     catch (error){
         // Verifica se é o erro referente a não ter mais acesso a API
-        if (error.message == "Failed to fetch"){
+        if (error.message == "Failed to fetch" || error.message == "Token is Invalid"){
             alert("Sistema Fora do Ar!")
         }
         else{
@@ -238,15 +239,16 @@ async function atualizar_endereco(dados) {
         );
 
         let resposta = await request.json();                        // Converte Resposta da API para Objeto
-        document.getElementById("form").style.display = 'none';     // Esconder Formulário
-        alert("Endereço Atualizado com Sucesso!");
 
         // Se resposta da API não for OK
         if (!request.ok){
             // Imprime resposta no console para fins de debug
             console.log(resposta);
-            throw new Error("Erro!\nStatus "+response.status);
+            throw new Error("Erro!\nStatus "+request.status);
         }
+
+        document.getElementById("form").style.display = 'none';     // Esconder Formulário
+        alert("Endereço Atualizado com Sucesso!");
     }
     catch (error){
         // Verifica se é o erro referente a não ter mais acesso a API
@@ -279,7 +281,7 @@ async function excluir_endereco(id) {
         if (!request.ok){
             // Imprime resposta no console para fins de debug
             console.log(resposta);
-            throw new Error("Erro!\nStatus "+response.status);
+            throw new Error("Erro!\nStatus "+request.status);
         }
         alert("Endereço Excluído com Sucesso!");
         listar()                    // Chama Função para Listar Endereços, atualizando a Lista
