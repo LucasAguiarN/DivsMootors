@@ -212,7 +212,7 @@ async function enviar_endereco(dados) {
     }
     catch (error){
         // Verifica se é o erro referente a não ter mais acesso a API
-        if (error.message == "Failed to fetch" || error.message == "Token is Invalid"){
+        if (error.message == "Failed to fetch"){
             alert("Sistema Fora do Ar!")
         }
         else{
